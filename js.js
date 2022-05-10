@@ -22,13 +22,28 @@ const getFiles = async (folder) => {
 
 const generateImageHTML = (image) => {
   const temp = document.querySelector(".image-template");
-  const clone = temp.content.cloneNode();
+  const clone = temp.content.cloneNode(true);
+  clone.querySelector(".image-template__wrapper").dataset.id = image.folder;
   clone.querySelector(".image-template__tags").innerHTML =
     image.metadata.tags.join(", ");
   clone.querySelector(
     ".image-template__img"
   ).src = `./library/images/${image.folder}.info)/${image.metadata.name}.${image.metadata.ext}`;
-  document.body.appendChild(clone);
+  document.querySelector(".images").appendChild(clone);
+  generateTagsHtml(image.folder);
+};
+
+const generateTagsHtml = (folder) => {
+  const temp = document.querySelector(".tags-template");
+  const clone = temp.content.cloneNode(true);
+  const button = clone.querySelector("button");
+  button.dataset.id = folder;
+  button.addEventListener("click", () => {
+    document
+      .querySelectorAll(`.images [data-id]="${folder}"`)
+      .classList.toggle("is-hidden");
+    button.classList.toggle("is-active");
+  });
 };
 
 getMetadata();
