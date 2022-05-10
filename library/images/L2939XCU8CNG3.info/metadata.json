@@ -1,1 +1,46 @@
-{"id":"L2939XCU8CNG3","name":"Google Drive","size":79789,"height":532,"width":849,"ext":"png","tags":["ui","share"],"annotation":"","folders":[],"isDeleted":false,"noThumbnail":true,"url":"https://drive.google.com/drive/u/0/my-drive","modificationTime":1650550862402,"lastModified":1650550710790,"palettes":[{"color":[249,249,249],"ratio":68},{"color":[128,129,129],"ratio":27},{"color":[170,175,181],"ratio":3.43}],"mtime":1650550708256,"btime":1650550708256}
+{
+    "id": "L2939XCU8CNG3",
+    "name": "Google Drive",
+    "size": 79789,
+    "height": 532,
+    "width": 849,
+    "ext": "png",
+    "tags": [
+        "ui"
+    ],
+    "annotation": "",
+    "folders": [],
+    "isDeleted": false,
+    "noThumbnail": true,
+    "url": "https://drive.google.com/drive/u/0/my-drive",
+    "modificationTime": 1650550862402,
+    "lastModified": 1650550710790,
+    "palettes": [
+        {
+            "color": [
+                249,
+                249,
+                249
+            ],
+            "ratio": 68
+        },
+        {
+            "color": [
+                128,
+                129,
+                129
+            ],
+            "ratio": 27
+        },
+        {
+            "color": [
+                170,
+                175,
+                181
+            ],
+            "ratio": 3.43
+        }
+    ],
+    "mtime": 1650550708256,
+    "btime": 1650550708256
+}
