@@ -11,7 +11,7 @@ const getMetadata = async () => {
 const getFiles = async (folder) => {
   const req = await fetch(`./library/${folder}/metadata.json`);
   const metadata = await req.json();
-  return constructThing(folder, metadata);
+  return Promise.resolve(constructThing(folder, metadata));
 };
 
 const constructThing = (folder, metadata) => {
