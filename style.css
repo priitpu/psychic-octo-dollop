@@ -12,6 +12,10 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.image-template__wrapper {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
 .image-template__wrapper img {
   width: 100%;
   height: auto;
