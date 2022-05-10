@@ -23,10 +23,10 @@ const getFiles = async (folder) => {
 const generateImageHTML = (image) => {
   const temp = document.querySelector(".image-template");
   const clone = temp.content.cloneNode();
-  clone.querySelector("image-template__tags").innerHTML =
+  clone.querySelector(".image-template__tags").innerHTML =
     image.metadata.tags.join(", ");
   clone.querySelector(
-    "image-template__img"
+    ".image-template__img"
   ).src = `./library/images/${image.folder}.info)/${image.metadata.name}.${image.metadata.ext}`;
   document.body.appendChild(clone);
 };
