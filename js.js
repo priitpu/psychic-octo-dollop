@@ -5,7 +5,8 @@ const getMetadata = async () => {
   const promises = folders.map((folder) => {
     getFiles(folder);
   });
-  Promise.allSettled(promises).then((response) => console.log(response));
+  const allPromises = await Promise.allSettled(promises);
+  console.log(allPromises);
 };
 
 const getFiles = async (folder) => {
